@@ -2,7 +2,7 @@ const Contact = () => {
   return  (
     <>
       <div>
-        <br/>
+        {/* <br/> */}
         <div className='outsideDiv'>
           <div className='outsideDiv'>
             <h1><s>Contact Me</s></h1>

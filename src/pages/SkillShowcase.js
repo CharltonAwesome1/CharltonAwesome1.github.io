@@ -25,25 +25,27 @@ const SkillShowcase = () => {
   
     return (
       <>
-        <br />
-        <div className='outsideDiv'>
+        {/* <br /> */}
+        {/* <div className='outsideDiv'> */}
           <div className='outsideDiv'>
             <h1>Skill Showcase</h1>
           </div>
-        </div>
-        <div className='outsideDiv'>
+        {/* </div> */}
+        <div className='skillsText'>
         <div className='directionBtn'>
           <button className='prevBtn' onClick={() => setCounter((c) => c > 0 ? c - 1 : 0)}>Previous</button>
           <button className='nextBtn' onClick={() => setCounter((c) => data.length / 10 > c + 1 ? c + 1 : data.length / 10 - 1)}>Next</button>
         </div>
+        <div className='leftText'>
         {data &&
           data.map((item) => {
             return (
               (item.id >= (counter * 10 + 1) && item.id <= (counter * (10) + 10)) ?
-                (<Fade left><p key={item.id}>{item.id} .  {item.title}</p></Fade>) :
+                (<Fade left><p className='floatText' key={item.id}>{item.id} .  {item.title}</p></Fade>) :
                 <></>
             )
           })};
+          </div>
       </div>
 
       <button onClick={() => setImageCounter((c) => c > 0 ? c - 1 : 0)}>Previous image page</button>
