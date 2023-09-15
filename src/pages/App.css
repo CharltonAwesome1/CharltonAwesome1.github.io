@@ -136,3 +136,27 @@ h3 {
   justify-content: left;
   font-size: 2em;
 }
+/* hidden */ 
+.notHidden{
+  /* visibility: visible; */
+  /* transition: all 1s; */
+  /* transform: translateX(50px); */
+  transition: all 0.5s; 
+  opacity: 1;
+  visibility: visible;
+  /* animation: fadeIn 5s;  */
+}
+.hidden {
+  /* visibility: hidden; */
+  /* transition: all 1s; */
+  /* transform: translateX(-50px); */
+  /* transform: initial; */
+  /* transform: fa; */
+  /* animation: fade; */
+  /* animation: fadeOut 5s;  */
+  transition: all 0.5s; 
+  opacity: 0;
+  visibility: hidden;
+
+  /* opacity: 0; */
+}
