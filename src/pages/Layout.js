@@ -30,6 +30,9 @@ const Layout = () => {
     };
   }, [handleNavigation]);
 
+  /* Should maybe change this. Evelyn says it should only be clickable at the top. */
+
+
   // https://sentry.io/answers/unique-key-prop/
 
   return (

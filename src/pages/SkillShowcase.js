@@ -22,33 +22,6 @@ const SkillShowcase = () => {
         .then((imgData) => setImageData(imgData));
     }, []);
 
-    // const [count, setCount] = useState(0);
-
-    // useEffect(() => {
-    //   setTimeout(() => {
-    //     setCount((count) => count + 1);
-    //     alert(window.scrollY)
-    //   }, 1000);
-    // });
-
-    // window.addEventListener ('scroll', (event) => {
-    //   console.log(event);
-
-    // });
-
-    /*useEffect(() => {
-      // onScroll= console.log(window.scrollY);
-      window.onscroll (() => {
-          console.log("We did it, Joe.")
-      })
-      });*/
-    // });
-    
-    // window.scrollY
-
-
-
-
     return (
       <>
         <div className='outsideDiv'>
