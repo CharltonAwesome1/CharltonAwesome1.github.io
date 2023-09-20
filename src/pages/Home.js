@@ -1,81 +1,66 @@
 import './App.css';
-import { useEffect, useState, useRef } from "react";
+// import { useEffect, useState, useRef } from "react";
+import React from 'react';
 
 const Home = () => {
 
-  const [returnString, setreturnString] = useState("");
-  const count = useRef("");
-  // const hmm = "Hello World"
 
-  // count
-  useEffect(() => {
-    setreturnString("");
-    // count.current = "";
-    for (let i = 0; i < 6; i++){  
-      setTimeout(() => {
-        // setInterval(() => {
-        // count.current = count.current + i.toString();
-        // setreturnString((returnString) => returnString + i.toString());
-        // setreturnString((returnString) => returnString = i.toString());
-        setreturnString((returnString) => returnString = i.toString());
-      }, 1000);
-    }; 
-  }, []);    
- 
-  // useEffect(() => {  
+  const [placeholder, setPlaceholder] = React.useState('');
 
-  //   for (let i = 0; i < hmm.length; i++) {
+  const
+    string = 'Charlton Solomons',
+    index = React.useRef(-1),
+    
+    hello = "≥¶/˚░≤¢•<…–`ƒ?˜æå÷∫µ▒≈¬∞˙ß™∆§ç▓∂≠>ª√¡©º£≥¶/˚░≤¢•<…–`ƒ?˜æå÷∫µ▒≈¬∞˙ß™∆§ç▓∂≠>ª√¡©º£",
+    hellolength = hello.length;
+    const replaceTheLetter = React.useRef(false);
+    
 
-  //     setreturnString(
-  //       (returnString) => setTimeout(() => {
-  //         returnString = returnString + "l" + hmm.charAt(i).toString
-  //       }, 1000));
+  React.useEffect(() => {
 
+    function tick() {
+      var counter = Math.floor(Math.random() * hellolength);
 
-  //     // setString = () => returnString + hmm.charAt(i);  
-  //     // console.log(hmm.charAt(i));
-  //   }
-  // }, [])
+      if (replaceTheLetter.current && index.current > 0){
+        setPlaceholder(prev => prev.substring(0, prev.length - 1));
+        index.current = index.current - 1;
+      }
+     if (counter < Math.floor(hellolength * 0.5)){        
+        setPlaceholder(prev => prev + string[index.current]);
+        replaceTheLetter.current = false;
+      }
+      else{
+        setPlaceholder(prev => prev + hello[counter]);
+        replaceTheLetter.current = true;
+      }
 
-  // const varHello = "Hel"
-  // var varCounter = 0;
+      // if (index.current == string.length){
+      //   setPlaceholder(prev => prev.substring(0, prev.length - 1));
+      // }
+    }
 
-  // useEffect(() => {
+    if (index.current < string.length - 1) {
+      index.current++;
+      let addChar = setInterval(tick, 75);
+      return () => clearInterval(addChar);
+    };
 
-
-  // //   for (let i = 0; i < varHello.length; i++){
-
-
-  //       while (varCounter < varHello.length){
-  //         setTimeout(() => {
-  //         setreturnString(returnString + varHello.charAt(varCounter));
-  //         console.log(returnString + varHello.charAt(varCounter));
-  //         varCounter = varCounter + 1;
-  //       }
-
-
-  // //       setreturnString(returnString) => returnString + varHello.charAt(varCounter);
-  // //       );
-  //       , 1000);}  
-  //       console.log("here " + returnString );
-  // //   }
-  // }
-  // , []);
+    setPlaceholder(string);
+  }, [placeholder]);
 
 
 
   return (
     <>
       <div className='outsideDiv'>
-        {/* <h2>Charlton Solomons</h2> */}
-        <h2>{returnString}</h2>
-        {/* <h2>{count.current}</h2> */}
+        <h2>{placeholder}</h2>
         <h3>Software Engineer</h3>
       </div>
     </>
   );
 
   // ≥¶/˚░≤¢•<…–`ƒ?˜æå÷∫µ▒≈¬∞˙ß™∆§ç▓∂≠>ª√¡©º£
+  // ≥¶/˚░≤¢•<…–`ƒ?˜æå÷∫µ▒≈¬∞˙ß™∆§ç▓∂≠>ª√¡©º£≥¶/˚░≤¢•<…–`ƒ?˜æå÷∫µ▒≈¬∞˙ß™∆§ç▓∂≠>ª√¡©º£
 
 };
 
