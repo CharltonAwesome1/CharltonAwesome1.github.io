@@ -11,9 +11,7 @@ const Home = () => {
     string = 'Charlton Solomons',
     index = React.useRef(-1),
     hello = "≥¶/˚░≤¢•<…–`ƒ?˜æå÷∫µ▒≈¬∞˙ß™∆§ç▓∂≠>ª√¡©º£≥¶/˚░≤¢•<…–`ƒ?˜æå÷∫µ▒≈¬∞˙ß™∆§ç▓∂≠>ª√¡©º£",
-    // hellolength = hello.length,
     replaceTheLetter = React.useRef(false);
-
 
   React.useEffect(() => {
 
@@ -23,7 +21,7 @@ const Home = () => {
       if (replaceTheLetter.current && index.current > 0) {
         setPlaceholder(prev => prev.substring(0, prev.length - 1));
         index.current = index.current - 1;
-      } 
+      }
       if (counter < Math.floor(hello.length * 0.5)) {
         setPlaceholder(prev => prev + string[index.current]);
         replaceTheLetter.current = false;

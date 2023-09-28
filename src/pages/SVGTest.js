@@ -45,10 +45,8 @@ const SVGTest = () => {
   const y2 = useRef(0);
 
   useEffect(() => {
-    // x.current = mousePos.x * 0.1;
     x.current = (mousePos.x * 2 - (windowSize[0] / 2)) * 0.25;
     x2.current = (mousePos.x * 2 - (windowSize[0] / 2)) * 0.20;
-    // y.current = mousePos.y * 0.1;
     y.current = ((mousePos.y * 2) - (windowSize[1] / 2)) * 0.25;
     y2.current = ((mousePos.y * 2) - (windowSize[1] / 2)) * 0.20;
 
@@ -68,8 +66,8 @@ const SVGTest = () => {
       <h3 ref={ref} >
         The mouse is at position{' '} <b>({mousePos.x}, {mousePos.y})
         </b>
-        <h2>Width: {windowSize[0]}</h2>
-        <h2>Height: {windowSize[1]}</h2>
+        {/* <h2>Width: {windowSize[0]}</h2>
+        <h2>Height: {windowSize[1]}</h2> */}
       </h3>
       {/* </div> */}
       {/*   
@@ -77,42 +75,6 @@ const SVGTest = () => {
           <div className='thistwo ' style={styles}></div>
         </div> */}
       {/* Charlton: This one ^^ is good too */}
-
-      {/* <div className='svgMostOuter'>
-        <div className='testDivplsIgnore'>
-          <div className='thisone these topletterline' style={styles}>C</div>
-        </div>
-
-
-        <div className='testDivplsIgnore'>
-          <div className='thistwo these bottomletterline' style={styles2}>h</div>
-        </div>
-
-        <div className='testDivplsIgnore'>
-          <div className='thisone these topletterline' style={styles}>a</div>
-        </div>
-
-        <div className='testDivplsIgnore'>
-          <div className='thistwo these bottomletterline' style={styles2}>r</div>
-        </div>
-
-        <div className='testDivplsIgnore'>
-          <div className='thisone these topletterline' style={styles}>l</div>
-        </div>
-
-        <div className='testDivplsIgnore'>
-          <div className='thistwo these bottomletterline' style={styles2}>t</div>
-        </div>
-
-        <div className='testDivplsIgnore'>
-          <div className='thisone these topletterline' style={styles}>o</div>
-        </div>
-
-        <div className='testDivplsIgnore'>
-          <div className='thistwo these bottomletterline' style={styles2}>en</div>
-        </div>
-
-      </div> */}
 
 
       <div className='svgMostOuter'>

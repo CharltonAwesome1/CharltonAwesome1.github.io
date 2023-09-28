@@ -1,7 +1,6 @@
 body {
   /* background-color: yellow; */
   background-color: rgb(46 50 58);
-  /* background: rgb(46 50 58); */
   margin: 0%;
 }
 
@@ -37,7 +36,6 @@ a:active {
 a:hover,
 .aboutBtn:hover {
   background: rgb(46 50 58);
-  /* background: red; */
   padding: 12px;
 }
 
@@ -57,7 +55,6 @@ p {
   background-color: rgba(35 39 47);
   position: fixed;
   margin-top: 50vh;
-  /* transform: rotate(270deg); */
   font-size: 25px;
   border-style: none;
   border-radius: 50px;
@@ -127,7 +124,7 @@ h3 {
 .floatText {
 
   justify-content: left;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .notHidden {
@@ -143,69 +140,44 @@ h3 {
 }
 
 svg {
-  /* width:max-content; */
   width: 100%;
-  /* height:max-content; */
   height: 90vh;
   margin-top: 0%;
   background-color: red;
 }
 
-/* .svgMostOuter {
-  padding: 5em;
-
-  
-} */
 .svgMostOuter {
   position: absolute;
   margin: 2.5rem;
   border: 2px solid red;
   width: 90vw;
   height: 90vh;
-  /* will-change: "transform";
-  transform-style: preserve-3d;
-  transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transition: all 0.5s ease-out;
-  z-index: 100; */
 }
-.testDivplsIgnore{
+
+.testDivplsIgnore {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
 .thisone {
-  /* background-color: yellow; */
   width: 10vh;
   height: 10vh;
 }
 
 .thistwo {
-  /* background-color: blue; */
-  /* width: 7.5vh; */
   width: 10vh;
-  /* height: 7.5vh; */
   height: 10vh;
 
-  /* top: 65vh; */
-  /* right: 6rem; */
-  /* left: 5vh; */
 }
 
 .topletterline {
   top: 25vh;
-  /* left: 15vh; */
-
 }
 
 .bottomletterline {
   top: 27.5vh;
-  /* left: 15vh; */
   display: inline-table;
-
-
 }
 
 .these {
@@ -215,7 +187,6 @@ svg {
   transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transition: all 1s ease-out;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /* margin-left: 10px; */
   color: white;
   display: flex;
   justify-content: center;
@@ -228,87 +199,27 @@ svg {
   flex-direction: row;
 }
 
-/*                 charlton              */
-/* .aboutDiv ul {
-  visibility: hidden;
-} */
-
-/* button ul, button li { */
-/* ul, li{
-  padding-inline-start: 0em;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  font-size: 0px;
+.nexClassName {
+  width: 100lvw;
+  height: 100vh;
+  padding: 0;
+  position: fixed;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
 }
 
-li a  {
-  visibility: hidden;
-} */
-/* ul {
-  text-align: center;
-} */
-/* ul li {
-  display: inline-block;
-  transition: all 0.3s ease-in-out;
-} */
-/* ul li:hover .submenu {
-  height: 85px;
-} */
-/* ul li:hover a {
-  color: #3862a0;
-} */
-/* ul, ul li:hover a::before, .aboutBtn:hover {
-  visibility: visible;
-  transform: scale(1, 1);
-  font-size: 25px;
-} */
-
-/*charlton*/
-/* ul, ul li:hover a::before, .aboutBtn:hover {
-  visibility: visible;
-  transform: scale(1, 1);
-  font-size: 25px;
-} */
-/*charlton*/
-
-/* ul li .submenu {
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  background-color: #3862a0;
-  height: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  transition: height 0.3s ease-in-out;
-  transition-delay: 0.1s;
-} */
-/* ul li .submenu a {
-  color: #fff;
-  margin-top: 20px;
-  font-size: 16px;
-} */
-/* ul li .submenu a:hover {
-  color: #fff;
-  text-decoration: underline;
-} */
-/* ul li a {
-  color: #999;
-  display: block;
-  padding: 0 7px 0 7px;
-  margin: 0 0 10px;
-  text-decoration: none;
-  position: relative;
-} */
-/* ul li a::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  bottom: -10px;
-  left: 0px;
-  background-color: #3862a0;
-  transition: all 0.2s ease-in-out;
-  transform: scale(0, 0);
-  visibility: hidden;
-} */
+.creditCardButton
+{
+  width: 50lvw;
+  height: 50vh;
+  background-color: yellow;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  z-index: 50;
+  border-radius: 50px;
+}

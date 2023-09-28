@@ -2,7 +2,7 @@ const Contact = () => {
   return  (
     <>
       <div>
-        {/* <br/> */}
+        {/* <button className="creditCardButton">credit card</button> */}
         <div className='outsideDiv'>
           <div className='outsideDiv'>
             <h1><s>Contact Me</s></h1>
