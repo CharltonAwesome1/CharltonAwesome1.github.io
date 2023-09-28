@@ -73,6 +73,13 @@ const Layout = () => {
       </BrowserView>
 
       <MobileView>
+      <div className={"nexClassName " + nexClassNameclass} style={{ zIndex: 101 }} onClick={bigDiv}>
+          <div>
+            <div>I code.</div>
+            <div>Sometimes well.</div>
+            <div>Other times really well.</div>
+          </div>
+        </div>
         <nav>
           <ul className="navList">
             <li className="navLink">
