@@ -1,7 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import './App.css';
 import { useState, useEffect, useRef, useCallback } from "react";
-import { BrowserView, MobileView } from 'react-device-detect';
+// import { BrowserView, MobileView } from 'react-device-detect';
+import { BrowserView } from 'react-device-detect';
 
 const Layout = () => {
 
@@ -44,7 +45,40 @@ const Layout = () => {
 
   return (
     <>
+
+      {/*Leila*/}
+
       <BrowserView>
+        {/* <div className={"nexClassName " + nexClassNameclass} style={{ zIndex: 101 }} onClick={bigDiv}>
+          <div>
+            <div>I code.</div>
+            <div>Sometimes well.</div>
+            <div>Other times really well.</div>
+          </div>
+        </div> */}
+
+        <nav>
+          <ul className="navList">
+            <li className="navLink">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="navLink">
+              <Link to="/aboutus">About Us</Link>
+            </li>
+            <li className="navLink">
+              <Link to="/subjects">Subjects</Link>
+            </li>
+            <li className="navLink">
+              <Link to="/contactus">ContactUs</Link>
+            </li>
+            <li className="navLink">
+              <Link to="/testimonials">Testimonials</Link>
+            </li>
+          </ul>
+        </nav>
+      </BrowserView>
+
+      {/* <BrowserView>
         <div className={"nexClassName " + nexClassNameclass} style={{ zIndex: 101 }} onClick={bigDiv}>
           <div>
             <div>I code.</div>
@@ -53,15 +87,11 @@ const Layout = () => {
           </div>
         </div>
         <nav>
-          {/* <img id="logo" src="logo192.png" alt="" style={{float: 'left'}}/> */}
-          {/* Charlton - look into this */}
+
           <ul className="navList">
             <li className="navLink">
               <Link to="/">Home</Link>
             </li>
-            {/* <li className="navLink">
-              <Link to="/skillshowcase">Skill Showcase</Link>
-            </li> */}
             <li className="navLink">
               <Link to="/contact">Contact</Link>
             </li>
@@ -70,9 +100,9 @@ const Layout = () => {
             </li>
           </ul>
         </nav>
-      </BrowserView>
+      </BrowserView> */}
 
-      <MobileView>
+      {/* <MobileView>
       <div className={"nexClassName " + nexClassNameclass} style={{ zIndex: 101 }} onClick={bigDiv}>
           <div>
             <div>I code.</div>
@@ -85,21 +115,15 @@ const Layout = () => {
             <li className="navLink">
               <Link to="/">Home</Link>
             </li>
-            {/* <li className="navLink">
-              <Link to="/skillshowcase">Skill Showcase</Link>
-            </li> */}
             <li className="navLink">
               <Link to="/contact">Contact</Link>
             </li>
-            {/* <li className="navLink">
-            <Link to="/svgtest">SVGTest</Link>
-          </li> */}
           </ul>
         </nav>
-      </MobileView>
+      </MobileView> */}
 
       <div className={count.current}>
-        <button className='aboutBtn' onClick={aboutBtnButton}>About</button>
+        {/* <button className='aboutBtn' onClick={aboutBtnButton}>About</button> */}
       </div>
 
       <Outlet />

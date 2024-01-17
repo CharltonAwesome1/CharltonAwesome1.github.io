@@ -21,7 +21,7 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: rgba(35 39 47);
+  background-color: rgba(14 14 14 );
 }
 
 .aboutBtn,
@@ -69,7 +69,8 @@ p {
 .outsideDiv {
   display: flex;
   min-height: 100vh;
-  background-color: rgb(27 30 37);
+  /* background-color: rgb(27 30 37); */
+  background-color: rgb(14 14 14 );
   justify-content: center;
   align-items: center;
   flex-direction: column;
