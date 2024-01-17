@@ -48,7 +48,7 @@ const Layout = () => {
 
       {/*Leila*/}
 
-      <BrowserView>
+      {/* <BrowserView> */}
         {/* <div className={"nexClassName " + nexClassNameclass} style={{ zIndex: 101 }} onClick={bigDiv}>
           <div>
             <div>I code.</div>
@@ -76,7 +76,7 @@ const Layout = () => {
             </li>
           </ul>
         </nav>
-      </BrowserView>
+      {/* </BrowserView> */}
 
       {/* <BrowserView>
         <div className={"nexClassName " + nexClassNameclass} style={{ zIndex: 101 }} onClick={bigDiv}>

@@ -4,6 +4,7 @@ import imgemail from './imgemail.png';
 import imgfacebook from './imgfacebook.png';
 import imginstagram from './imginstagram.png';
 
+/* The icons are copyrighted. We can't legally use them. */
 const ContactUs = () => {
   return  (
     <>
