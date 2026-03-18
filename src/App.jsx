@@ -1,13 +1,10 @@
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import SkillShowcase from "./pages/SkillShowcase";
-import Contact from "./pages/Contact";
-import NoPage from "./pages/NoPage";
-import SVGTest from "./pages/SVGTest";
-
-// import ScrollReveal from 'scrollreveal'
+import Layout from "@pages/Layout";
+import Home from "@pages/Home";
+import SkillShowcase from "@pages/SkillShowcase";
+import SVGTest from "@pages/SVGTest";
+import Contact from "@pages/Contact";
+import NoPage from "@pages/NoPage";
 
 export default function App() {
   return (
@@ -24,6 +21,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
